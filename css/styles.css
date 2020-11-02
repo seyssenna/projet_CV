@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #515151;
+}
+
+a{
+    text-decoration: none;
+    color: #515151;
+}
+
+li{
+    list-style: none;
+}
+
+h2{
+    padding-top: 100px;
+    margin-bottom: 100px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    /* identical to box height, or 146% */
+    text-align: center;
+    letter-spacing: 0.15em;
+}
+
+hr{
+    width: 20%;
+    border-top: none;
+    border-bottom: solid 1px grey;
+}
+
+.a-propos, .competences, .formation, .experiences, .references{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.bloc-couleur{
+    width: 100%;
+    background-color: #EAEAEA;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+/*-----------------header-nav-------------------*/
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 1;
+}
+
+header img{
+    height: 40px;
+    margin-left: 3em;   
+}
+
+header ul{
+    display: flex;
+}
+header li{
+    margin: 0 1em 0 1em;
+    font-weight: 500;
+}
+header li:hover{
+    font-weight: bolder;
+    text-shadow: 0px 0px 17px rgba(0, 0, 0, 0.3);
+}
+
+header i{
+    margin-right: 1em;
+    font-size: 2em;
+}
+header i:hover{
+    text-shadow: 0px 0px 17px rgba(0, 0, 0, 0.4);
+}
+
+/*---------------------haut-de-page(img)----------*/
+
+.header{
+    background-image: url("../images/img3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0;
+    grid-template-rows: repeat(7, 1fr);
+
+}
+
+.text-header{
+    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.5em;
+    /* color: #515151; */
+}
+
+.header h2{
+    margin: 30px 0 0 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.5em;
+    /* color: #515151; */
+}
+
+.header hr{
+    width: 40%;
+    border: solid 1px #515151;
+}
+
+/*-----------------A PROPOS---------------*/
+
+.a-propos p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    /* or 194% */
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #A3A3A3
+}
+
+.a-propos hr{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+
+/*-----------------COMPETENCES---------------*/
+
+
+.competences{
+    text-align: center;
+}
+.competences ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.competences i{
+    font-size: 5rem;
+}
+
+.competences p{
+    padding-top: 80px;
+    padding-bottom: 70px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 80px;
+    letter-spacing: 0.25em;
+}
+
+
+/*-----------------FORMATIONS & EXPERIENCES---------------*/
+
+article{
+    padding-bottom: 60px;
+}
+
+article hr{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.annee{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    /* identical to box height, or 146% */
+    letter-spacing: 0.15em;
+}
+
+.titre{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 35px;
+    /* identical to box height, or 250% */
+    letter-spacing: 0.15em;
+}
+
+.lieu{
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 35px;
+    /* identical to box height, or 250% */
+    letter-spacing: 0.15em;
+}
+
+
+/*-----------------REFERENCES---------------*/
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+   justify-items: center;
+}
+
+.references article{
+    width: 60%;
+}
+
+article img{
+    width: 100%;
+    height: 350px   
+}
+
+span{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+}
+
+.citation{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.3em;
+}
+
+
+/*-----------------FOOTER & CONTACT---------------*/
+
+footer{
+    background-color: #C4C4C4;
+}
+.contact{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info{
+    align-self: stretch;
+    width: 80%;
+}
+
+
+.info-perso{
+    justify-self: end;
+    align-self: center;
+    margin-right: 100px;
+    width: 34%;
+}
+.info-perso h3, .info h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+}
+.info-perso p, .info p{
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    margin-top: 30px;
+}
+
+footer h2{
+    padding-top: 40px;
+    margin-bottom: 70px;
+}
